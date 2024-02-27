@@ -326,9 +326,9 @@ def verificar_disyuntos():
             indice_conjunto1 = int(seleccion_conjunto1.get()) - 1
             indice_conjunto2 = int(seleccion_conjunto2.get()) - 1
             if conjuntos[indice_conjunto1].es_disjunto(conjuntos[indice_conjunto2]):
-                messagebox.showinfo("Resultado", "Los conjuntos son disyuntos.")
-            else:
                 messagebox.showinfo("Resultado", "Los conjuntos NO son disyuntos.")
+            else:
+                messagebox.showinfo("Resultado", "Los conjuntos son disyuntos.")
         except Exception as e:
             messagebox.showerror("Error", str(e))
 
