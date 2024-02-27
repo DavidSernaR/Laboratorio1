@@ -357,7 +357,6 @@ def calcular_complemento():
                 universo = universo.union(conjunto)
             complemento = conjuntos[indice_conjunto].complemento(universo)
             messagebox.showinfo("Complemento", f"El complemento del conjunto es: {complemento.elementos}")
-            mostrar_diagrama_venn([conjuntos[indice_conjunto], complemento], "Complemento")
         except Exception as e:
             messagebox.showerror("Error", str(e))
 
